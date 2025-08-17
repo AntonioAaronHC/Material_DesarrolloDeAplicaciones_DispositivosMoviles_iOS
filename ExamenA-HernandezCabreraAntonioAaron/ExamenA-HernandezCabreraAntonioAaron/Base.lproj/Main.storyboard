@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2L7-gK-nTX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="3m9-KA-CBj">
+            <objects>
+                <navigationController id="2L7-gK-nTX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q0H-cO-G4G">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ia6-ZE-ES6" kind="relationship" relationship="rootViewController" id="v5A-UX-vq2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lT-rB-zTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1032" y="-61"/>
+        </scene>
+        <!--Examen Final A-->
+        <scene sceneID="vy0-SO-rCf">
+            <objects>
+                <viewController id="ia6-ZE-ES6" customClass="ViewController" customModule="ExamenA_HernandezCabreraAntonioAaron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xJY-CP-YuA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese el número a calcular" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j6-dG-vF2">
+                                <rect key="frame" x="90.333333333333329" y="228" width="212.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PYD-b1-MiC">
+                                <rect key="frame" x="180.66666666666666" y="268" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUF-tB-2TU">
+                                <rect key="frame" x="109" y="545" width="173" height="96"/>
+                                <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="NGu-bI-mvE"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular"/>
+                                <connections>
+                                    <action selector="calcularButtonAction:" destination="ia6-ZE-ES6" eventType="touchUpInside" id="fI6-k3-m3Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Resultado ..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mer-y4-EJU">
+                                <rect key="frame" x="34" y="416" width="325" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="xyu-a0-KWA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kl3-JW-ZYU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hUF-tB-2TU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6j6-dG-vF2" secondAttribute="leading" id="0sZ-3Q-nUw"/>
+                            <constraint firstItem="hUF-tB-2TU" firstAttribute="centerX" secondItem="PYD-b1-MiC" secondAttribute="centerX" constant="-1.1666666666666572" id="462-TV-bTO"/>
+                            <constraint firstItem="mer-y4-EJU" firstAttribute="centerX" secondItem="PYD-b1-MiC" secondAttribute="centerX" id="N2M-lP-fnn"/>
+                            <constraint firstItem="Kl3-JW-ZYU" firstAttribute="trailing" secondItem="6j6-dG-vF2" secondAttribute="trailing" constant="90" id="QWk-74-0iT"/>
+                            <constraint firstItem="Kl3-JW-ZYU" firstAttribute="bottom" secondItem="hUF-tB-2TU" secondAttribute="bottom" constant="177" id="V8l-H9-OA8"/>
+                            <constraint firstItem="hUF-tB-2TU" firstAttribute="centerX" secondItem="xJY-CP-YuA" secondAttribute="centerX" constant="-1" id="bj5-kT-vtx"/>
+                            <constraint firstItem="6j6-dG-vF2" firstAttribute="top" secondItem="Kl3-JW-ZYU" secondAttribute="top" constant="125" id="gcF-H9-Qcj"/>
+                            <constraint firstItem="mer-y4-EJU" firstAttribute="centerX" secondItem="6j6-dG-vF2" secondAttribute="centerX" id="pm0-4c-yfj"/>
+                            <constraint firstItem="PYD-b1-MiC" firstAttribute="top" secondItem="6j6-dG-vF2" secondAttribute="bottom" constant="19" id="uU2-SM-Xtz"/>
+                            <constraint firstItem="mer-y4-EJU" firstAttribute="centerY" secondItem="xJY-CP-YuA" secondAttribute="centerY" id="zmj-ef-lzT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Examen Final A" id="YwE-ex-VTW"/>
+                    <connections>
+                        <outlet property="ingresaNumero" destination="PYD-b1-MiC" id="Wse-ph-ehE"/>
+                        <outlet property="resultado" destination="mer-y4-EJU" id="zm5-4K-JS8"/>
+                        <segue destination="jgM-RH-PFJ" kind="show" identifier="vvvvv" id="YaX-jG-dJb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGY-LO-F5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-185.49618320610685" y="-53.521126760563384"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="nRz-sy-6o5">
+            <objects>
+                <viewController storyboardIdentifier="vc2" id="jgM-RH-PFJ" customClass="ViewController2" customModule="ExamenA_HernandezCabreraAntonioAaron" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwm-18-VCc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El número fibonacci del número digitado es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nX-WW-upC">
+                                <rect key="frame" x="30" y="193" width="333" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="número" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnH-Xa-egy">
+                                <rect key="frame" x="96.666666666666686" y="259" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="g93-rR-kmD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YNL-pP-vGL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZnH-Xa-egy" firstAttribute="top" secondItem="9nX-WW-upC" secondAttribute="bottom" constant="45" id="VRg-eQ-05a"/>
+                            <constraint firstItem="ZnH-Xa-egy" firstAttribute="centerX" secondItem="9nX-WW-upC" secondAttribute="centerX" id="gXl-ki-wwJ"/>
+                            <constraint firstItem="ZnH-Xa-egy" firstAttribute="centerX" secondItem="uwm-18-VCc" secondAttribute="centerX" id="kiR-g5-dPd"/>
+                            <constraint firstItem="YNL-pP-vGL" firstAttribute="bottom" secondItem="ZnH-Xa-egy" secondAttribute="bottom" constant="538" id="uLW-Y6-5GS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="bsb-Jq-lAw"/>
+                    <connections>
+                        <outlet property="texto" destination="ZnH-Xa-egy" id="OmG-ZG-pIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bh1-RY-QWb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="692" y="-56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,2 +1,1 @@
-# Material_DesarrolloDeAplicaciones_DispositivosMoviles_iOS
-Material de la asignatura de Apple
+# Dispositivos-M-viles
